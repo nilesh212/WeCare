@@ -1,0 +1,30 @@
+2024-12-02 18:49:32 [main] INFO  com.infy.WeCareOneApplication - Starting WeCareOneApplication using Java 17.0.11 with PID 11832 (C:\Users\niles\Downloads\WECare\target\classes started by niles in C:\Users\niles\Downloads\WECare)
+2024-12-02 18:49:32 [main] DEBUG com.infy.WeCareOneApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02 18:49:32 [main] INFO  com.infy.WeCareOneApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 18:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-02 18:49:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2024-12-02 18:49:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-12-02 18:49:33 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-12-02 18:49:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2024-12-02 18:49:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 18:49:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-02 18:49:33 [main] INFO  o.a.c.c.C.[.[localhost].[/WeCare] - Initializing Spring embedded WebApplicationContext
+2024-12-02 18:49:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+2024-12-02 18:49:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-02 18:49:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-02 18:49:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-02 18:49:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-02 18:49:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-02 18:49:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a589eed
+2024-12-02 18:49:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-02 18:49:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-02 18:49:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02 18:49:36 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-02 18:49:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-02 18:49:37 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 16 endpoints beneath base path '/actuator'
+2024-12-02 18:49:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/WeCare'
+2024-12-02 18:49:37 [main] INFO  com.infy.WeCareOneApplication - Started WeCareOneApplication in 5.621 seconds (process running for 6.152)
+2024-12-02 18:49:41 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-02 18:49:41 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02 18:49:41 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-02 18:49:41 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
