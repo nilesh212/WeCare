@@ -1,91 +1,90 @@
-Wecare Healthcare Application
-
-Wecare is a healthcare application that facilitates users in booking appointments with doctors, who are referred to as coaches in the application.
-
-Description
+# Wecare Healthcare Application
 
 Wecare is a Java Spring Boot application designed to simplify healthcare management by enabling users to book, reschedule, and manage appointments with healthcare professionals, called coaches. With secure user and coach authentication, and streamlined APIs, the app ensures a smooth and efficient booking experience.
 
-Features
+## Features
 
-User registration and login.
+- User registration and login
+- Coach registration and login
+- Profile management for users and coaches
+- Booking, rescheduling, and cancellation of appointments
 
-Coach registration and login.
+## API Endpoints
 
-Profile management for users and coaches.
+### User Endpoints
+- **Register User:** `POST /users`
+- **Login User:** `POST /users/login`
+- **Get User Profile:** `POST /users/{userId}`
+- **Book Appointment:** `POST /users/{userId}/booking/{coachId}`
+- **Get All Appointments for a User:** `GET /users/booking/{userId}`
 
-Booking, rescheduling, and cancellation of appointments.
+### Coach Endpoints
+- **Register Coach:** `POST /coaches`
+- **Login Coach:** `POST /coaches/login`
+- **Get Coach Profile:** `POST /coaches/{coachId}`
+- **Get All Coaches:** `GET /coaches/all`
+- **Get All Appointments for a Coach:** `POST /coaches/booking/{coachId}`
 
-API Endpoints
+### Booking Endpoints
+- **Reschedule an Appointment:** `PUT /booking/{bookingId}`
+- **Cancel an Appointment:** `DELETE /booking/cancel/{bookingId}`
 
-User
+## Technology Stack
 
-Register User: POST /users
+- **Database:** MySQL
+- **Backend Language:** Java
+- **Framework:** Spring Boot
 
-Login User: POST /users/login
+## Database Tables
 
-Get User Profile: GET /users/{userId}
+1. **User:** Stores user details
+2. **Coach:** Stores coach details
+3. **Booking:** Stores appointment details
 
-Book Appointment: POST /users/{userId}/booking/{coachId}
+## Getting Started
 
-Get All Appointments for a User: GET /users/booking/{userId}
+### Prerequisites
+- Java Development Kit
+- MySQL Database
+- Git
 
-Coach
+### Installation
 
-Register Coach: POST /coaches
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/wecare-healthcare-app.git
+```
 
-Login Coach: POST /coaches/login
+2. Set up the MySQL database with the required schema
 
-Get Coach Profile: GET /coaches/{coachId}
+3. Configure database connection properties in `application.properties`
 
-Get All Coaches: GET /coaches/all
+4. Build and run the application
+```bash
+./mvnw spring-boot:run
+```
 
-Get All Appointments for a Coach: GET /coaches/booking/{coachId}
+## Contribution Guidelines
 
-Booking
+1. Fork the repository
+2. Create a feature branch
+```bash
+git checkout -b feature-name
+```
+3. Commit your changes
+```bash
+git commit -m 'Add feature'
+```
+4. Push to the branch
+```bash
+git push origin feature-name
+```
+5. Create a pull request
 
-Reschedule an Appointment: PUT /booking/{bookingId}
+## License
 
-Cancel an Appointment: DELETE /booking/cancel/{bookingId}
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Technology Stack
+## Contact
 
-Database: MySQL
-
-Backend Language: Java
-
-Framework: Spring Boot
-
-Database Tables
-
-User: Stores user details.
-
-Coach: Stores coach details.
-
-Booking: Stores appointment details.
-
-Instructions for Running the Application
-
-Clone the repository from GitHub.
-
-Set up the MySQL database with the required schema.
-
-Configure the database connection properties in the application.properties file.
-
-Build and run the application using your preferred IDE or command line.
-
-Contribution Guidelines
-
-Fork the repository.
-
-Create a feature branch (git checkout -b feature-name).
-
-Commit your changes (git commit -m 'Add feature').
-
-Push to the branch (git push origin feature-name).
-
-Create a pull request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+For any inquiries, please reach out to the project maintainers.
