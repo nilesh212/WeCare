@@ -52,7 +52,7 @@ Wecare is a Java Spring Boot application designed to simplify healthcare managem
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/wecare-healthcare-app.git
+git clone https://github.com/nilesh212/wecare.git
 ```
 
 2. Set up the MySQL database with the required schema
